@@ -29,13 +29,13 @@ Meteor Insight is ideal for:
 
 ## Snapshots
 
-![Meteor Weather](./assets/images/meteor-insight.png)
+![Meteor Weather](./Assets/Images/meteor_weather_screenshot.png)
 
 ## Live Demonstration
 
-[Live Demo](https://your-username.github.io/Meteor-Insight/)
+[Live Demo](https://simonamckenzie.github.io/meteor_weather/)
 
-[GitHub Repository](https://github.com/YourUsername/Meteor-Insight)
+[GitHub Repository](https://github.com/SimonAMcKenzie/meteor_weather)
 
 ## License
 
@@ -47,4 +47,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Conclusion
 
-Thank you for exploring Meteor Insight! For any inquiries or feedback, don't hesitate to [reach out](mailto:your-email@example.com).
+Thank you for exploring Meteor Insight!
