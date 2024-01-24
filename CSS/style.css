@@ -1,0 +1,200 @@
+/* Reset styles */
+body, h1, h2, h3, p, figure, blockquote, dl, dd, ul, ol, li, fieldset, legend, button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+    background: linear-gradient(to right, #008080, #004080); /* Changed background gradient */
+    color: #ffffff;
+}
+
+/* Global styles */
+.container-fluid {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.weather-header {
+    background: linear-gradient(to right, #ff5733, #ff8c33); /* Changed header gradient */
+    text-align: center;
+    padding: 20px;
+}
+
+.weather-header h1 {
+    font-size: 40px; /* Increased font size */
+    margin: 0;
+}
+
+/* Hero section styles */
+.jumbotron {
+    background: url('/Images/mountains.png') center center no-repeat; /* Replace with the path to your image */
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0; /* Adjust the padding as needed */
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+    font-size: 3em; /* Adjust the font size as needed */
+}
+
+/* Search form styles */
+.form {
+    margin-top: 20px;
+}
+
+.weather-search {
+    width: 70%;
+    padding: 12px; /* Increased padding */
+    border: 2px solid #ffdb58; /* Changed border color */
+    border-radius: 10px; /* Changed border radius */
+    margin-bottom: 10px;
+}
+
+.search-button {
+    background: linear-gradient(to right, #ff5733, #ff8c33); /* Changed button gradient */
+    color: #ffffff;
+    padding: 12px; /* Increased padding */
+    border: none;
+    border-radius: 10px; /* Changed border radius */
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.weather-hr {
+    border-top: 2px solid #ffdb58; /* Changed border color and thickness */
+    margin: 20px 0;
+}
+
+/* History and Results styles */
+.col-lg-3 {
+    background: linear-gradient(to right, #ffb347, #ffcc33); /* Changed box gradient */
+    padding: 20px;
+    border-radius: 15px; /* Changed border radius */
+}
+
+.list-group {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    cursor: pointer;
+    border: 2px solid #ffdb58; /* Changed border color and thickness */
+    background: linear-gradient(to right, #ffffff, #f8f9fa); /* Changed item gradient */
+    padding: 12px; /* Increased padding */
+    margin-bottom: 5px;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item:hover {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Changed background gradient on hover */
+}
+
+/* Today and Forecast styles */
+.col-lg-9 {
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 2px solid #ffdb58; /* Changed border color and thickness */
+    border-radius: 15px; /* Changed border radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Changed box shadow */
+}
+
+.card-body {
+    padding: 20px;
+    padding-right: 55px;
+}
+
+/* Specific color for Current Day section */
+#current-day-section {
+    color: #9c9797; /* Change text color for the Current Day section */
+}
+
+/* Specific color for 5-Day Forecast section */
+#forecast-section {
+    color: #ffffff; /* Change text color for the 5-Day Forecast section */
+}
+
+/* Circular styling for Forecast Boxes */
+#forecast .col-md-2 {
+    flex: 0 0 calc(20% - 20px); /* Adjusted width for 5 cards in a row */
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 15px; /* Make the box circular */
+    padding: 20px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#forecast .col-md-2 .card-body {
+    padding: 15px;
+    background: linear-gradient(to right, #001e4f, #002f7f); /* Changed body gradient */
+}
+
+#forecast .col-md-2 h5, #forecast .col-md-2 p {
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    /* Mobile and Tablet styles */
+    .weather-search {
+        width: 100%;
+    }
+
+    #forecast .col-md-2 {
+        flex: 0 0 calc(50% - 20px); /* Two cards in a row for mobile and tablet */
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet and Desktop styles */
+    #forecast .col-md-2 {
+        flex: 0 0 calc(33.333% - 20px); /* Three cards in a row for tablet and desktop */
+        margin-right: 20px;
+    }
+
+    #forecast .col-md-2:last-child {
+        margin-right: 0; /* Remove margin from the last card in a row */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Desktop styles */
+    #forecast .col-md-2 {
+        flex: 0 0 calc(33.333% - 20px); /* Three cards in a row for desktop */
+        margin-right: 20px;
+    }
+
+    #forecast .col-md-2:last-child {
+        margin-right: 0; /* Remove margin from the last card in a row */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Large Desktop and Widescreen TV styles */
+    #forecast .col-md-2 {
+        flex: 0 0 calc(20% - 20px); /* Five cards in a row for large desktop and widescreen TV */
+        margin-right: 20px;
+    }
+
+    #forecast .col-md-2:last-child {
+        margin-right: 0; /* Remove margin from the last card in a row */
+    }
+}
