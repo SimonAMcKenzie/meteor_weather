@@ -30,7 +30,7 @@ body {
 
 /* Hero section styles */
 .jumbotron {
-    background: url('/Images/mountains.png') center center no-repeat; /* Replace with the path to your image */
+    background: url('../Images/mountains.png') center center no-repeat; /* Replace with the path to your image */
     background-size: cover;
     color: #ffffff;
     text-align: center;
